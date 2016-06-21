@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.androidlibraryv4.ActivityChooseField">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="170dp">
+
+        <Button
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:text="Add Book"
+            android:id="@+id/btnAddBook"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnAddAdmin"
+            android:layout_toStartOf="@+id/btnAddAdmin"
+            style="@style/AppTheme"
+            android:onClick="onClickAddBooksListener"
+            />
+
+        <Button
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:text="Add Admin"
+            android:id="@+id/btnAddAdmin"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            style="@style/AppTheme"
+            android:onClick="onClickAddAdminListener"
+            />
+
+        <Button
+            android:layout_width="373dp"
+            android:layout_height="wrap_content"
+            android:text="Add Member"
+            android:id="@+id/btnAddMember"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnAddAdmin"
+            android:layout_toEndOf="@+id/btnAddAdmin"
+            style="@style/AppTheme"
+            android:onClick="onClickAddMembersListener"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

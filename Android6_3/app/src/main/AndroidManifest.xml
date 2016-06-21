@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anita.androidlibraryv4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.androidlibraryv4.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="main.services.admin.AdminService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="main.services.admin.CleanerService"
+            android:exported="false" />
+        <service
+            android:name="main.services.booksystem.AdultBookService"
+            android:exported="false" />
+        <service
+            android:name="main.services.booksystem.KidBookService"
+            android:exported="false" />
+        <service
+            android:name="main.services.booksystem.YoungAdultService"
+            android:exported="false" />
+        <service
+            android:name="main.services.booksystem.RestrictedBookService"
+            android:exported="false" />
+        <service
+            android:name="main.services.members.MemberService"
+            android:exported="false" />
+        <service
+            android:name="main.services.database.admin.DeleteDB"
+            android:exported="false" />
+        <service
+            android:name="main.services.database.admin.ShowDB"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="main.services.database.admin.InsertDB"
+            android:exported="false" />
+
+        <activity android:name="com.androidlibraryv4.ActivityChooseField">
+            <intent-filter>
+                <action android:name="com.androidlibraryv4.Main2Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.androidlibraryv4.ActivityBooks">
+            <intent-filter>
+                <action android:name="com.androidlibraryv4.ActivityBooks" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.androidlibraryv4.ActivityMembers">
+            <intent-filter>
+                <action android:name="com.androidlibraryv4.ActivityMembers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.androidlibraryv4.ActivityAdmin">
+            <intent-filter>
+                <action android:name="com.androidlibraryv4.ActivityAdmin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    <activity android:name="com.androidlibraryv4.ActivityDisplayBooks">
+        <intent-filter>
+            <action android:name="com.androidlibraryv4.ActivityDisplayBooks"/>
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+
+
+        <activity android:name="com.androidlibraryv4.ActivityShowDB" >
+            <intent-filter>
+                <action android:name="com.androidlibraryv4.ActivityShowDB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

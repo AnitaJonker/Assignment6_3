@@ -1,0 +1,13 @@
+package com;
+
+import android.app.Application;
+import android.test.ApplicationTestCase;
+
+/**
+ * Created by Anita on 2016/04/23.
+ */
+ public class ApplicationTest extends ApplicationTestCase<Application> {
+    public ApplicationTest() {
+        super(Application.class);
+    }
+}
